@@ -1,0 +1,6 @@
+<h1>Here are all the users: </h1>
+<h3> {% for user in all_users %} 
+    <li>{{user}}</li>
+    <a href="/user/{{user.title()}}">link</a>
+    {% endfor %}
+</h3>
